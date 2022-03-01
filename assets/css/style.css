@@ -23,7 +23,6 @@ header h1 {
   margin: 0;
   display: inline;
 }
-
 header a {
   text-decoration: none;
   color: #fce138;
@@ -71,7 +70,7 @@ section {
   padding: 60px;
 }
 
-/* Hero Style Start*/
+/* Hero Style Start */
 .hero {
   background-image: url("../images/hero-bg.jpg");
   height: 600px;
@@ -82,7 +81,7 @@ section {
 /* Hero Style End */
 
 .hero-form {
-  border: 3px solid #023e76;
+  border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
   width: 500px;
@@ -94,9 +93,8 @@ section {
 
 .hero-form h3 {
   font-size: 24px;
-  margin: 0px;
+  margin: 0;
 }
-
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -122,4 +120,3 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 }
-/* HERO STYLES END*/
