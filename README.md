@@ -15,6 +15,6 @@ https://harrison-daniel.github.io/run-buddy/
 
 ## Contribution
 
-Made with ❤️ by Harry
+Made with ❤️ by Harry Daniel
 
 ### ©️2019 Run Buddy, Inc
