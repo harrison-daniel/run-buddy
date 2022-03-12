@@ -9,14 +9,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+
 /* HEADER / NAV BAR STYLES START */
 
 header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px 35px;
-  background-color: #39a6b2;
 }
 
 header h1 {
@@ -31,16 +32,16 @@ header a {
   color: #fce138;
 }
 
+header nav {
+  margin: 7px 0;
+}
+
 header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-}
-
-header nav {
-  margin: 7px 0;
 }
 
 header nav ul li a {
@@ -51,13 +52,15 @@ header nav ul li a {
 
 /* HEADER / NAVBAR STYLES END */
 
+
+
 /* FOOTER STYLES START */
 footer {
+  background: #fce138;
+  padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: #fce138;
-  padding: 40px 35px;
   width: 100%;
 }
 
@@ -84,9 +87,12 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-cta {
@@ -105,9 +111,6 @@ section {
 }
 
 .hero-form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
@@ -131,7 +134,7 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -144,8 +147,9 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-}
+} 
 /* HERO STYLES END */
+
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -179,9 +183,21 @@ section {
 }
 /* WHAT YOU DO STYLES END */
 
+
 /* WHAT YOU DO STYLES START */
-.steps {
+.steps { 
   background: #fce138;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .step h3 {
@@ -209,6 +225,7 @@ section {
 .step-text {
   flex: 12;
 }
+
 .step-text p {
   color: #39a6b2;
   font-size: 18px;
@@ -220,16 +237,6 @@ section {
   color: #024e76;
 }
 
-.step {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid #39a6b2;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -238,14 +245,14 @@ section {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: spce-around;
+  justify-content: space-around;
 }
 
 .trainer {
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
 }
 
 .trainer img {
@@ -281,15 +288,15 @@ section {
   color: #fce138;
 }
 
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
 .contact-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
 }
 
 .contact-info iframe {
@@ -305,21 +312,16 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-info a {
-  color: #fce138;
-}
-
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
+  display: block;
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
@@ -337,6 +339,11 @@ section {
   padding: 15px 0;
   font-size: 16px;
 }
+
+.contact-info a {
+  color: #fce138;
+}
+
 
 /* REACH OUT STYLES END */
 
