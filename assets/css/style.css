@@ -11,15 +11,16 @@
 }
 
 body {
-  color: #39a6b2;
+  color: var(--tertiary-color);
   font-family: Helvetica, Arial, sans-serif;
 }
+
 
 /* HEADER / NAV BAR STYLES START */
 
 header {
   padding: 20px 35px;
-  background-color: #39a6b2;
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -74,6 +75,8 @@ header nav ul li a:hover {
 
 /* HEADER / NAVBAR STYLES END */
 
+
+
 /* FOOTER STYLES START */
 footer {
   background: var(--primary-color);
@@ -107,7 +110,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -145,7 +148,7 @@ section {
 }
 
 .hero-form button:hover {
-  background-color: #39a6b2;
+  background-color: var(--tertiary-color);  
 }
 
 .hero-form h3 {
@@ -163,13 +166,13 @@ section {
   font-size: 16px;
   color: var(--secondary-color);
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255,255,255, 0.75);
 }
 
 .form-input:focus {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -184,28 +187,25 @@ section {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-}
+} 
 
-.checkbox-wrapper input,
-.radio-wrapper input {
+.checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
 }
 
-.checkbox-wrapper label,
-.radio-wrapper label {
+.checkbox-wrapper label, .radio-wrapper label {
   position: relative;
   left: 10px;
   margin: 10px;
   line-height: 1.6;
 }
 
-.checkbox-wrapper label::before,
-.radio-wrapper label::before {
+.checkbox-wrapper label::before, .radio-wrapper label::before {
   content: "";
   height: 20px;
   width: 20px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid var(--secondary-color);
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid var(--secondary-color);  
   position: absolute;
   top: -4px;
   left: -30px;
@@ -217,13 +217,14 @@ section {
 
 .radio-wrapper label::after {
   content: "";
-  width: 20px;
   height: 20px;
+  width: 20px;
   border-radius: 50%;
   background: var(--secondary-color);
   position: absolute;
   left: -29px;
   top: -3px;
+  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
 
 .checkbox-wrapper label::after {
@@ -238,16 +239,17 @@ section {
   transform: rotate(-58deg);
 }
 
-.checkbox-wrapper input + label::after,
+.checkbox-wrapper input + label::after, 
 .radio-wrapper input + label::after {
   content: none;
 }
 
-.checkbox-wrapper input:checked + label::after,
+.checkbox-wrapper input:checked + label::after, 
 .radio-wrapper input:checked + label::after {
   content: "";
 }
 /* HERO STYLES END */
+
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -265,15 +267,14 @@ section {
 }
 
 .secondary-border {
-  border-color: #39a6b2;
+  border-color: var(--tertiary-color);
 }
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
-
 .intro p {
   line-height: 1.7;
-  color: #39a6b2;
+  color: var(--tertiary-color);
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
@@ -281,8 +282,9 @@ section {
 }
 /* WHAT YOU DO STYLES END */
 
+
 /* WHAT YOU DO STYLES START */
-.steps {
+.steps { 
   background: var(--primary-color);
 }
 
@@ -290,7 +292,6 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -328,7 +329,7 @@ section {
 }
 
 .step-text p {
-  color: #39a6b2;
+  color: var(--tertiary-color);
   font-size: 18px;
 }
 
@@ -412,16 +413,14 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
@@ -431,12 +430,11 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255,255,255, 0.75);
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  background-color: rgba(255, 255, 255, 1);
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -453,7 +451,7 @@ section {
 
 .contact-form button:hover {
   color: var(--primary-color);
-  background: #39a6b2;
+  background: var(--tertiary-color);
 }
 
 .contact-info a {
@@ -497,17 +495,15 @@ section {
     font-size: 20px;
   }
 
-  footer h2,
-  footer div {
+  footer h2, footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta,
-  .hero-form {
+  .hero-cta, .hero-form {
     width: 100%;
   }
-
+  
   .hero-cta {
     text-align: center;
   }
@@ -515,12 +511,12 @@ section {
   .section-title {
     width: 80%;
   }
-
+  
   .trainer {
     flex: 0 70%;
   }
-
-  .contact-info iframe {
+  
+  .contact-info iframe{
     flex: 1 100%;
   }
 }
@@ -550,11 +546,10 @@ section {
   }
 
   .step-text {
-    flex: 100%;
+    flex: 100%;  
   }
 
-  .trainer-bio h3,
-  .trainer-bio h4 {
+  .trainer-bio h3, .trainer-bio h4 {
     display: block;
   }
 }
